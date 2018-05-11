@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.DELL.new_blood.request_blood"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginBottom="10dp"
+        android:background="#EC3051"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:theme="@style/ToolbarStyle" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="106dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="17dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hammad" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+
+
+
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/location"
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/circle4"
+                android:drawableTop="@drawable/rsz_icon"
+                android:paddingTop="9dp"
+                android:radius="20dp"
+                android:text="Set Location"
+                android:textColor="#fff"
+                android:textSize="10sp" />
+
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="match_parent"
+                android:paddingTop="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="#EC3051"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                tools:text="Address" />
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textSize="15sp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Address" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/msg1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textSize="15sp"
+                android:ems="10"
+                android:hint="message"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:inputType="textMultiLine"
+                android:lines="8" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/radius"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:textSize="15sp"
+                    android:hint="Radius(km)"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/blood_type"
+                android:layout_width="172dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:popupBackground="#EC3051"
+                android:theme="@style/SpinnerItem" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle2"
+            android:paddingLeft="30dp"
+            android:drawableRight="@drawable/rsz_sumbit"
+            android:paddingRight="10dp"
+            android:text="Request"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

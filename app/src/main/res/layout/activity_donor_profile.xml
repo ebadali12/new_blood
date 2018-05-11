@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.DELL.new_blood.donor_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbars"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:theme="@style/ToolbarStyle"
+
+                android:background="#EC3051" />
+
+            />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="106dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="0dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/hammad" />
+
+
+
+        </RelativeLayout>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/dimage"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--app:srcCompat="@drawable/b1" />-->
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="15dp"
+            android:elevation="12dp"
+            android:id="@+id/dimagee"
+            app:cardCornerRadius="70dp"
+            android:layout_centerHorizontal="true"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:layout_gravity="center_horizontal"
+            android:thicknessRatio="1.9">
+            <ImageView
+                android:layout_height="130dp"
+                android:layout_width="match_parent"
+                android:id="@+id/dimage"
+
+                android:src="@drawable/blood_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+            </ImageView>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="199dp"
+                android:padding="10dp"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+
+                    android:text="Profile infomation"
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="321dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/profile2"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Name:"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:textSize="13sp" />
+
+
+                    <TextView
+                        android:id="@+id/profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="321dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pro"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Blood group"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/donor_blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="321dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:paddingLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pro1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Phone no"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/donor_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="TextView"
+                    android:textColor="#fff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp">
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+
+
+                    android:text="Donor on  Map"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/location"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EC3051"
+                    android:drawableTop="@drawable/rsz_icon"
+                    android:paddingTop="9dp"
+                    android:radius="20dp"
+
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle2"
+                android:drawableLeft="@drawable/rsz_call"
+                android:paddingLeft="20dp"
+                android:scaleType="fitXY"
+                android:text="CALL"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/msg"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/circle2"
+                android:drawableLeft="@drawable/rsz_message"
+                android:paddingLeft="10dp"
+                android:scaleType="fitXY"
+                android:text="Message"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context="com.example.DELL.new_blood.DRLoginActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbars"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:theme="@style/ToolbarStyle"
+        android:background="#EC3051" />
+
+
+    />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/hammad" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="BloodCare"
+            android:textColor="#EC3051"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:drawableRight="@drawable/rsz_login"
+            android:background="@drawable/circle2"
+            android:layout_gravity="center_horizontal"
+            android:text="Login" />
+
+
+        <Button
+            android:id="@+id/email_sign_up_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:drawableRight="@drawable/rsz_1signup"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/circle2"
+            android:layout_gravity="center_horizontal"
+            android:text="Signup" />
+    </LinearLayout>
+</LinearLayout>

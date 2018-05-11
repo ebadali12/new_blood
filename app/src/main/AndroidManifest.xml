@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.DELL.new_blood">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- add these permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood_logo"
+        android:label="FIND BLOOD"
+        android:roundIcon="@drawable/blood_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="FIND BLOOD">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DRLoginActivity"
+            android:label="Donor/Request Login" />
+        <activity
+            android:name=".BCLoginActivity"
+            android:label="Blood center Login" />
+        <activity android:name=".BCsignupActivity" />
+        <activity
+            android:name=".DRsignupActivity"
+            android:label="Donor/Request Registeration" />
+        <activity
+            android:name=".drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FireBaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".notification_activity" />
+        <activity android:name=".request_blood" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9251d9a19a3a950d83513b6aed06c992166ede11" />
+
+        <activity android:name=".notification_frm_donor" />
+        <activity android:name=".drawer_bc" />
+        <activity android:name=".Add_event" />
+        <activity android:name=".event_activity" />
+        <activity android:name=".Active_donor" />
+        <activity android:name=".request_history" />
+        <activity android:name=".donation_history" />
+        <activity android:name=".donation_activity" />
+        <activity android:name=".splash" />
+        <activity android:name=".donor_profile" />
+        <activity android:name=".event_history" />
+        <activity android:name=".user_profile" />
+        <activity android:name=".edit_info" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".test_refresh" />
+        <activity android:name=".update_profile" />
+        <activity android:name=".Donor_onMap" />
+        <activity android:name=".Donors_onMap_onMap" />
+        <activity android:name=".event_user"></activity>
+    </application>
+
+</manifest>

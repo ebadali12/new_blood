@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "346879127230",
+    "firebase_url": "https://bloodfinal-fde11.firebaseio.com",
+    "project_id": "bloodfinal-fde11",
+    "storage_bucket": "bloodfinal-fde11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346879127230:android:7adae43e78ee4d63",
+        "android_client_info": {
+          "package_name": "com.example.DELL.new_blood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346879127230-kbdjhggj8k88lqu3qi4g8ovf0b0n3i30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.DELL.new_blood",
+            "certificate_hash": "843e5585645aa99cfedd5dd18b0ac5a7c98886ee"
+          }
+        },
+        {
+          "client_id": "346879127230-bfonld583avjmhbbkq7okkeftlj4g5gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF3PLfOSGHMVa0D0QcDDu0Tsn8OXcVmTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346879127230-bfonld583avjmhbbkq7okkeftlj4g5gg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

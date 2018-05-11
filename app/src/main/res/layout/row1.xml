@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:padding="10dp"
+    android:clickable="false"
+   >
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:background="@drawable/circle6"
+        android:text="Date"
+        android:textColor="#fff"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Requested Blood group :"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="#EC3051"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/circle3"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="25dp"
+        android:layout_marginTop="21dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/arrow3" />
+
+    <!--<Button-->
+        <!--android:textColor="#fff"-->
+        <!--android:background="#000"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/choose"-->
+        <!--android:text="Choose"/>-->
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+
+        />
+
+
+</LinearLayout>
