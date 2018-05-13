@@ -22,8 +22,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".MainActivity"
-            android:label="FIND BLOOD">
+            android:name=".SMSActivities.SendSmsActivity">
+            <!--android:label="FIND BLOOD">-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -96,6 +96,9 @@
         <activity android:name=".Donor_onMap" />
         <activity android:name=".Donors_onMap_onMap" />
         <activity android:name=".event_user"></activity>
+
+        <!--<activity android:name=".SMSActivities.SendSmsActivity"/>-->
+        <activity android:name=".SMSActivities.VerifyNumberActivity"/>
     </application>
 
 </manifest>
